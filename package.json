@@ -1,0 +1,25 @@
+{
+	"name": "burger-landing",
+	"version": "1.0.0",
+	"description": "Лендинг бургерной с использованием SASS и BEM методологии",
+	"main": "index.html",
+	"scripts": {
+		"sass": "sass scss/style.scss css/style.css",
+		"watch": "sass --watch scss/style.scss:css/style.css",
+		"build": "sass scss/style.scss css/style.css --style compressed",
+		"dev": "sass --watch scss/style.scss:css/style.css"
+	},
+	"keywords": [
+		"sass",
+		"scss",
+		"bem",
+		"landing",
+		"burger",
+		"restaurant"
+	],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"sass": "^1.69.0"
+	}
+}

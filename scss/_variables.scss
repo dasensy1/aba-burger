@@ -1,0 +1,41 @@
+// Цвета
+$color-primary: #fdb913; // Желтый/оранжевый
+$color-secondary: #3d3d3d; // Темно-серый
+$color-dark: #1f1f1f; // Черный
+$color-white: #ffffff;
+$color-text: #333333;
+$color-text-light: #666666;
+$color-accent: #d93b30; // Красный для кнопок
+
+// Шрифты
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Bebas Neue', cursive;
+
+// Размеры шрифтов
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 18px;
+$font-size-h1: 72px;
+$font-size-h2: 48px;
+$font-size-h3: 36px;
+$font-size-h4: 24px;
+
+// Отступы
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+$spacing-xxl: 64px;
+
+// Контейнер
+$container-width: 1200px;
+$container-padding: 20px;
+
+// Переходы
+$transition-base: all 0.3s ease;
+
+// Точки останова (breakpoints)
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+$breakpoint-desktop: 1200px;

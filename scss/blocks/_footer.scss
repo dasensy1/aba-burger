@@ -1,0 +1,74 @@
+// Footer block
+.footer {
+	padding: $spacing-lg 0;
+	background-color: $color-dark;
+
+	&__container {
+		@include container;
+		@include flex(space-between, center);
+
+		@include respond-to(tablet) {
+			flex-direction: column;
+			gap: $spacing-md;
+			text-align: center;
+		}
+	}
+
+	&__copyright {
+		color: rgba(255, 255, 255, 0.6);
+		font-size: $font-size-small;
+	}
+
+	&__social {
+		@include flex(center, center);
+		gap: $spacing-md;
+	}
+
+	&__social-link {
+		width: 40px;
+		height: 40px;
+		@include flex(center, center);
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		color: $color-white;
+		transition: $transition-base;
+
+		&:hover {
+			background-color: $color-primary;
+			transform: translateY(-3px);
+		}
+
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__contacts {
+		@include flex(flex-end, center);
+		gap: $spacing-md;
+
+		@include respond-to(tablet) {
+			justify-content: center;
+		}
+	}
+
+	&__phone {
+		color: $color-white;
+		font-weight: 700;
+		font-size: $font-size-base;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	&__email {
+		color: $color-white;
+		font-size: $font-size-base;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}

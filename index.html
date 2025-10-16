@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Натуральные бургеры - лучшие в городе. Доставка свежих бургеров от профессиональной команды поваров.">
+    <title>Burger Landing - Натуральные бургеры</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <img src="https://png.pngtree.com/png-clipart/20250107/original/pngtree-spicy-burger-logo-with-fire-png-image_19863031.png" alt="Burger Logo">
+                <span class="header__logo-text">BURGERS</span>
+            </a>
+            
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="#hero" class="header__menu-link">Главная</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#features" class="header__menu-link">О нас</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#menu" class="header__menu-link">Меню</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#team" class="header__menu-link">Команда</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#order" class="header__menu-link">Заказать</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header__actions">
+                <a href="tel:+79991234567" class="header__phone">+7 777 455 46 63</a>
+                <button class="header__btn">Заказать</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">МЫ ДЕЛАЕМ</h1>
+                <p class="hero__subtitle">натуральные бургеры</p>
+                <p class="hero__description">
+                    Только свежие ингредиенты, никаких полуфабрикатов. 
+                    Наши бургеры готовятся из отборного мяса и качественных продуктов.
+                </p>
+                <button class="hero__btn">Заказать сейчас</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section" id="features">
+        <div class="features__container">
+            <h2 class="features__title section-title">МЫ ЛУЧШИЕ</h2>
+            <div class="features__list">
+                <div class="features__item">
+                    <div class="features__icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="38" stroke="#FDB913" stroke-width="3"/>
+                            <path d="M40 15L45 30H60L48 38L53 53L40 45L27 53L32 38L20 30H35L40 15Z" fill="#FDB913"/>
+                            <path d="M35 60C35 60 30 58 28 55M45 60C45 60 50 58 52 55" stroke="#FDB913" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="40" cy="25" r="3" fill="#D93B30"/>
+                        </svg>
+                    </div>
+                    <h3 class="features__item-title">100% свежесть</h3>
+                    <p class="features__item-text">
+                        Все овощи и зелень фермерские. Мясо — только охлажденное мраморное 
+                        из Аргентины и России. Для каждого гостя мы готовим с любовью.
+                    </p>
+                </div>
+                
+                <div class="features__item">
+                    <div class="features__icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="38" stroke="#FDB913" stroke-width="3"/>
+                            <path d="M30 35C30 35 32 25 40 25C48 25 50 35 50 35" stroke="#FDB913" stroke-width="3" stroke-linecap="round"/>
+                            <rect x="25" y="35" width="30" height="5" rx="2" fill="#FDB913"/>
+                            <rect x="27" y="40" width="26" height="15" rx="2" fill="#FDB913"/>
+                            <circle cx="35" cy="47" r="2" fill="#fff"/>
+                            <circle cx="45" cy="47" r="2" fill="#fff"/>
+                            <path d="M40 50C40 50 37 52 35 50M40 50C40 50 43 52 45 50" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                            <ellipse cx="40" cy="20" rx="8" ry="6" fill="#FDB913"/>
+                        </svg>
+                    </div>
+                    <h3 class="features__item-title">Лучшие повара</h3>
+                    <p class="features__item-text">
+                        Команда профессиональных поваров с многолетним опытом работы 
+                        в лучших ресторанах мира. Каждый бургер — произведение искусства.
+                    </p>
+                </div>
+                
+                <div class="features__item">
+                    <div class="features__icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="38" stroke="#FDB913" stroke-width="3"/>
+                            <rect x="25" y="30" width="30" height="20" rx="2" fill="#FDB913"/>
+                            <path d="M25 35H55" stroke="#1F1F1F" stroke-width="2"/>
+                            <circle cx="30" cy="45" r="3" fill="#1F1F1F"/>
+                            <circle cx="50" cy="45" r="3" fill="#1F1F1F"/>
+                            <path d="M55 40H60L63 43V48H60" stroke="#FDB913" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="30" cy="50" r="4" stroke="#FDB913" stroke-width="2" fill="#fff"/>
+                            <circle cx="50" cy="50" r="4" stroke="#FDB913" stroke-width="2" fill="#fff"/>
+                            <path d="M20 32L15 27M60 32L65 27M40 22V15" stroke="#D93B30" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="features__item-title">Быстрая доставка</h3>
+                    <p class="features__item-text">
+                        Доставим горячий бургер в течение 30 минут в любую точку города. 
+                        Гарантируем свежесть и качество при доставке.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product section" id="product">
+        <div class="product__container">
+            <div class="product__image">
+                <img src="https://images.pexels.com/photos/1025804/pexels-photo-1025804.jpeg" alt="Dark Beef Burger">
+            </div>
+            <div class="product__content">
+                <h2 class="product__title">DARK BEEF BURGER</h2>
+                <p class="product__description">
+                    Специальное предложение! Черная булочка с семенами кунжута, 
+                    сочная мраморная говядина, фермерский сыр чеддер, хрустящий бекон, 
+                    свежие овощи и наш фирменный соус.
+                </p>
+                <div class="product__price">
+                    <span class="product__price-value">500</span>
+                    <span class="product__price-currency">рублей</span>
+                </div>
+                <button class="product__btn">Заказать</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section" id="team">
+        <div class="team__container">
+            <div class="team__content">
+                <h2 class="team__title">КОМАНДА</h2>
+                <p class="team__description">
+                    Наша команда — это профессионалы своего дела, которые любят готовить 
+                    и создавать кулинарные шедевры. Мы работаем только с лучшими продуктами 
+                    и постоянно совершенствуем наши рецепты.
+                </p>
+                <ul class="team__list">
+                    <li class="team__member">
+                        <div class="team__member-icon">
+                            <img src="https://24smi.org/public/media/person/2018/01/19/akvct3p7llfj-viktor-barinov.jpg" alt="Главный шеф">
+                        </div>
+                        <div class="team__member-info">
+                            <div class="team__member-name">Виктор Пертрович Баринов</div>
+                            <div class="team__member-role">Главный шеф-повар</div>
+                        </div>
+                    </li>
+                    <li class="team__member">
+                        <div class="team__member-icon">
+                            <img src="https://cdn.7days.ru/pic/53e/974310/1397377/104.jpg" alt="Су-шеф">
+                        </div>
+                        <div class="team__member-info">
+                            <div class="team__member-name">Луи Бенуа</div>
+                            <div class="team__member-role">Десерты</div>
+                        </div>
+                    </li>
+                    <li class="team__member">
+                        <div class="team__member-icon">
+                            <img src="https://img51994.domkino.tv/img/2017-12-04/fmt_114_24_1424166842_477062f19b44.png" alt="Повар">
+                        </div>
+                        <div class="team__member-info">
+                            <div class="team__member-name">Максим Лавров</div>
+                            <div class="team__member-role">Огузок</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="team__images">
+                <img src="https://images2.novochag.ru/upload/img_cache/b24/b248ebfa43d06695b82e061bd60897ac_cropped_666x444.jpg" alt="Наша команда">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section" id="menu">
+        <div class="menu__container">
+            <h2 class="menu__title">МЕНЮ</h2>
+            <div class="menu__content">
+                <div class="menu__image">
+                    <img src="https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg" alt="Наш бургер">
+                </div>
+            </div>
+            <div class="menu__categories">
+                <a href="#" class="menu__category menu__category--active">для мясоедов</a>
+                <a href="#" class="menu__category">для вегетарианцев</a>
+                <a href="#" class="menu__category">детское меню</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section class="work-process section" id="work">
+        <div class="work-process__container">
+            <h2 class="work-process__title section-title">КАК МЫ РАБОТАЕМ</h2>
+            <div class="work-process__content">
+                <div class="work-process__image">
+                    <img src="https://pikuco.ru/upload/test_stable/1f7/1f7c060b0dba5ac1c66402b5cb19e354.webp" alt="Процесс приготовления">
+                </div>
+                <div class="work-process__steps">
+                    <div class="work-process__step">
+                        <div class="work-process__step-number">1</div>
+                        <h3 class="work-process__step-title">Выбор продуктов</h3>
+                        <p class="work-process__step-text">
+                            Отбираем только свежие и качественные ингредиенты от проверенных 
+                            поставщиков. Мясо доставляется каждое утро.
+                        </p>
+                    </div>
+                    <div class="work-process__step">
+                        <div class="work-process__step-number">2</div>
+                        <h3 class="work-process__step-title">Приготовление</h3>
+                        <p class="work-process__step-text">
+                            Наши шеф-повара готовят каждый бургер вручную по уникальным 
+                            рецептам. Котлеты жарятся до идеальной степени прожарки.
+                        </p>
+                    </div>
+                    <div class="work-process__step">
+                        <div class="work-process__step-number">3</div>
+                        <h3 class="work-process__step-title">Доставка</h3>
+                        <p class="work-process__step-text">
+                            Упаковываем бургер в специальную тару, сохраняющую температуру, 
+                            и доставляем в течение 30 минут прямо к вашей двери.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-form section" id="order">
+        <div class="order-form__container">
+            <h2 class="order-form__title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
+            <form class="order-form__form" action="#" method="POST">
+                <div class="order-form__row">
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="name">Ваше имя</label>
+                        <input 
+                            class="order-form__input" 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Введите ваше имя"
+                            required
+                        >
+                    </div>
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="phone">Телефон</label>
+                        <input 
+                            class="order-form__input" 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="+7 (___) ___-__-__"
+                            required
+                        >
+                    </div>
+                </div>
+                
+                <div class="order-form__row">
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="street">Улица</label>
+                        <input 
+                            class="order-form__input" 
+                            type="text" 
+                            id="street" 
+                            name="street" 
+                            placeholder="Введите улицу"
+                            required
+                        >
+                    </div>
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="house">Дом</label>
+                        <input 
+                            class="order-form__input" 
+                            type="text" 
+                            id="house" 
+                            name="house" 
+                            placeholder="Дом"
+                            required
+                        >
+                    </div>
+                </div>
+                
+                <div class="order-form__row">
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="apartment">Квартира</label>
+                        <input 
+                            class="order-form__input" 
+                            type="text" 
+                            id="apartment" 
+                            name="apartment" 
+                            placeholder="Квартира"
+                        >
+                    </div>
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="floor">Этаж</label>
+                        <input 
+                            class="order-form__input" 
+                            type="text" 
+                            id="floor" 
+                            name="floor" 
+                            placeholder="Этаж"
+                        >
+                    </div>
+                </div>
+                
+                <div class="order-form__row order-form__row--full">
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="comment">Комментарий</label>
+                        <textarea 
+                            class="order-form__input order-form__textarea" 
+                            id="comment" 
+                            name="comment" 
+                            placeholder="Добавьте комментарий к заказу"
+                        ></textarea>
+                    </div>
+                </div>
+                
+                <div class="order-form__checkboxes">
+                    <div class="order-form__checkbox">
+                        <input type="checkbox" id="no-call" name="no-call">
+                        <label for="no-call">Не перезванивать</label>
+                    </div>
+                    <div class="order-form__checkbox">
+                        <input type="checkbox" id="no-change" name="no-change">
+                        <label for="no-change">Сдача не нужна</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="order-form__submit">Оформить заказ</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section class="map" id="map">
+        <div class="map__container">
+            <iframe 
+                class="map__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043109266!2d30.320858516097!3d59.938951981876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JTQstC-0YDRhtC-0LLQsNGPINC_0LsuLCDRgS4g0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MDE4Nw!5e0!3m2!1sru!2sru!4v1234567890123!5m2!1sru!2sru" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                © 2025 Burger Landing. Все права защищены.
+            </div>
+            
+            
+            
+            
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

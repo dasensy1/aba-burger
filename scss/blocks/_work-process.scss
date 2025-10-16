@@ -1,0 +1,86 @@
+// Work Process block (КАК МЫ РАБОТАЕМ)
+.work-process {
+	padding: $spacing-xxl 0;
+	background-color: $color-white;
+
+	&__container {
+		@include container;
+	}
+
+	&__title {
+		@include heading($font-size-h2);
+		text-align: center;
+		margin-bottom: $spacing-xl;
+
+		@include respond-to(mobile) {
+			font-size: $font-size-h3;
+		}
+	}
+
+	&__content {
+		@include flex(space-between, center);
+		gap: $spacing-lg;
+
+		@include respond-to(tablet) {
+			flex-direction: column;
+		}
+	}
+
+	&__image {
+		flex: 0 0 50%;
+
+		@include respond-to(tablet) {
+			flex: 0 0 100%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+		}
+	}
+
+	&__steps {
+		flex: 0 0 45%;
+
+		@include respond-to(tablet) {
+			flex: 0 0 100%;
+		}
+	}
+
+	&__step {
+		margin-bottom: $spacing-lg;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__step-number {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background-color: $color-primary;
+		color: $color-white;
+		border-radius: 50%;
+		@include flex(center, center);
+		font-size: $font-size-h4;
+		font-weight: 700;
+		margin-bottom: $spacing-sm;
+	}
+
+	&__step-title {
+		@include heading($font-size-h4);
+		margin-bottom: $spacing-sm;
+
+		@include respond-to(mobile) {
+			font-size: $font-size-large;
+		}
+	}
+
+	&__step-text {
+		color: $color-text-light;
+		font-size: $font-size-base;
+		line-height: 1.6;
+	}
+}

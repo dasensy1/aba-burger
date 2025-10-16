@@ -1,0 +1,26 @@
+// Main SCSS file
+// Импорт базовых стилей и настроек
+
+// 1. Сброс стилей
+@import 'normalize';
+
+// 2. Переменные
+@import 'variables';
+
+// 3. Миксины
+@import 'mixins';
+
+// 4. Базовые стили
+@import 'base';
+
+// 5. Импорт блоков (BEM)
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/features';
+@import 'blocks/product';
+@import 'blocks/team';
+@import 'blocks/menu';
+@import 'blocks/work-process';
+@import 'blocks/order-form';
+@import 'blocks/map';
+@import 'blocks/footer';

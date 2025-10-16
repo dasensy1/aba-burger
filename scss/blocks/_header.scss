@@ -1,0 +1,80 @@
+// Header block
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: $spacing-md 0;
+	z-index: 100;
+
+	&__container {
+		@include container;
+		@include flex(space-between, center);
+	}
+
+	&__logo {
+		@include flex(flex-start, center);
+		gap: $spacing-sm;
+
+		img {
+			height: 50px;
+		}
+	}
+
+	&__logo-text {
+		font-size: $font-size-large;
+		font-weight: 700;
+		color: $color-white;
+	}
+
+	&__nav {
+		@include respond-to(mobile) {
+			display: none;
+		}
+	}
+
+	&__menu {
+		@include reset-list;
+		@include flex(center, center);
+		gap: $spacing-lg;
+	}
+
+	&__menu-item {
+		// Стили элементов меню
+	}
+
+	&__menu-link {
+		color: $color-white;
+		font-size: $font-size-base;
+		text-transform: uppercase;
+		font-weight: 500;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	&__actions {
+		@include flex(flex-end, center);
+		gap: $spacing-sm;
+	}
+
+	&__phone {
+		color: $color-white;
+		font-weight: 700;
+		font-size: $font-size-large;
+
+		@include respond-to(mobile) {
+			display: none;
+		}
+	}
+
+	&__btn {
+		@include button($color-accent, $color-white);
+
+		@include respond-to(mobile) {
+			padding: 10px 20px;
+			font-size: $font-size-small;
+		}
+	}
+}

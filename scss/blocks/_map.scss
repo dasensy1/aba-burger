@@ -1,0 +1,24 @@
+// Map block
+.map {
+	height: 500px;
+	position: relative;
+
+	@include respond-to(mobile) {
+		height: 400px;
+	}
+
+	&__container {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+
+	&__marker {
+		// Стили для кастомных маркеров, если нужно
+	}
+}

@@ -1,0 +1,99 @@
+// Product block (DARK BEEF BURGER)
+.product {
+	padding: $spacing-xxl 0;
+	background-color: $color-primary;
+	position: relative;
+	overflow: hidden;
+
+	&__container {
+		@include container;
+		@include flex(space-between, center);
+
+		@include respond-to(tablet) {
+			flex-direction: column;
+			gap: $spacing-lg;
+		}
+	}
+
+	&__image {
+		flex: 0 0 50%;
+		position: relative;
+		z-index: 2;
+
+		@include respond-to(tablet) {
+			flex: 0 0 100%;
+			text-align: center;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content {
+		flex: 0 0 45%;
+
+		@include respond-to(tablet) {
+			flex: 0 0 100%;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		@include heading($font-size-h1);
+		color: $color-white;
+		margin-bottom: $spacing-md;
+
+		@include respond-to(mobile) {
+			font-size: $font-size-h2;
+		}
+	}
+
+	&__description {
+		color: $color-white;
+		font-size: $font-size-large;
+		margin-bottom: $spacing-lg;
+		line-height: 1.6;
+	}
+
+	&__price {
+		@include flex(flex-start, center);
+		gap: $spacing-md;
+		margin-bottom: $spacing-lg;
+
+		@include respond-to(tablet) {
+			justify-content: center;
+		}
+	}
+
+	&__price-value {
+		font-size: 72px;
+		font-weight: 700;
+		color: $color-white;
+		font-family: $font-secondary;
+
+		@include respond-to(mobile) {
+			font-size: 48px;
+		}
+	}
+
+	&__price-currency {
+		font-size: $font-size-h3;
+		color: $color-white;
+
+		@include respond-to(mobile) {
+			font-size: $font-size-h4;
+		}
+	}
+
+	&__btn {
+		@include button($color-accent, $color-white);
+		font-size: $font-size-large;
+		padding: 20px 50px;
+
+		@include respond-to(mobile) {
+			width: 100%;
+		}
+	}
+}

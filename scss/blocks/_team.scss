@@ -1,0 +1,98 @@
+// Team block (КОМАНДА)
+.team {
+	padding: $spacing-xxl 0;
+	background-color: $color-secondary;
+
+	&__container {
+		@include container;
+		@include flex(space-between, center);
+
+		@include respond-to(tablet) {
+			flex-direction: column;
+			gap: $spacing-lg;
+		}
+	}
+
+	&__content {
+		flex: 0 0 45%;
+
+		@include respond-to(tablet) {
+			flex: 0 0 100%;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		@include heading($font-size-h2);
+		color: $color-primary;
+		margin-bottom: $spacing-lg;
+
+		@include respond-to(mobile) {
+			font-size: $font-size-h3;
+		}
+	}
+
+	&__description {
+		color: $color-white;
+		font-size: $font-size-base;
+		margin-bottom: $spacing-md;
+		line-height: 1.8;
+	}
+
+	&__list {
+		@include reset-list;
+		margin-top: $spacing-lg;
+	}
+
+	&__member {
+		@include flex(flex-start, center);
+		gap: $spacing-md;
+		margin-bottom: $spacing-md;
+
+		@include respond-to(tablet) {
+			justify-content: center;
+		}
+	}
+
+	&__member-icon {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		overflow: hidden;
+		flex-shrink: 0;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__member-info {
+		color: $color-white;
+	}
+
+	&__member-name {
+		font-weight: 700;
+		font-size: $font-size-large;
+		margin-bottom: 4px;
+	}
+
+	&__member-role {
+		color: $color-primary;
+		font-size: $font-size-small;
+	}
+
+	&__images {
+		flex: 0 0 50%;
+
+		@include respond-to(tablet) {
+			flex: 0 0 100%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

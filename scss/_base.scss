@@ -1,0 +1,73 @@
+// Базовые стили
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: $font-size-base;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $font-primary;
+	color: $color-text;
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: $font-secondary;
+	font-weight: 700;
+}
+
+p {
+	margin: 0 0 $spacing-md 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: $transition-base;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+button {
+	cursor: pointer;
+	font-family: inherit;
+}
+
+// Контейнер
+.container {
+	@include container;
+}
+
+// Утилиты
+.section {
+	padding: $spacing-xxl 0;
+
+	@include respond-to(mobile) {
+		padding: $spacing-xl 0;
+	}
+}
+
+.section-title {
+	@include heading($font-size-h2);
+	text-align: center;
+	margin-bottom: $spacing-xl;
+
+	@include respond-to(mobile) {
+		font-size: $font-size-h3;
+		margin-bottom: $spacing-lg;
+	}
+}

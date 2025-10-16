@@ -1,0 +1,81 @@
+// Hero block
+.hero {
+	position: relative;
+	min-height: 100vh;
+	background-image: url('https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg');
+	background-size: cover;
+	background-position: center;
+	@include flex(center, center);
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	&__container {
+		@include container;
+		position: relative;
+		z-index: 1;
+		// align block left
+		margin-left: 180px;
+	}
+
+	&__content {
+		max-width: 600px;
+		// align block left
+		
+		@include respond-to(mobile) {
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		@include heading($font-size-h1);
+		color: $color-white;
+		margin-bottom: $spacing-lg;
+		line-height: 1.1;
+
+		@include respond-to(mobile) {
+			font-size: $font-size-h2;
+		}
+	}
+
+	&__subtitle {
+		font-size: $font-size-h3;
+		color: $color-white;
+		margin-bottom: $spacing-xl;
+		font-family: $font-secondary;
+
+		@include respond-to(mobile) {
+			font-size: $font-size-h4;
+			margin-bottom: $spacing-lg;
+		}
+	}
+
+	&__description {
+		color: $color-white;
+		font-size: $font-size-large;
+		margin-bottom: $spacing-xl;
+
+		@include respond-to(mobile) {
+			font-size: $font-size-base;
+		}
+	}
+
+	&__btn {
+		@include button($color-accent, $color-white);
+		font-size: $font-size-large;
+		padding: 20px 50px;
+
+		@include respond-to(mobile) {
+			width: 100%;
+			padding: 15px 30px;
+		}
+	}
+}
