@@ -1,6 +1,6 @@
 import './styles.scss';
 
-// Основной JS: меню, аккордеон, простой слайдер, слайдшоу и отправка формы
+// Основной JS: меню, аккордеон, пjростой слайдер, слайдшоу и отправка формы
 
 // --- Fullscreen menu ---
 const menuToggle = document.getElementById('menuToggle');
