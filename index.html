@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aba Burger — Практика Webpack & Vite</title>
+  <!-- В dev с Vite подключаем scss через импорт в main.js, в простом варианте можно скомпилировать в CSS и подключить здесь -->
+  <script type="module" crossorigin src="/assets/index-Dgj1F8yz.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C7LRCdTx.css">
+</head>
+<body>
+  <header class="site-header">
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false">Меню ☰</button>
+  </header>
+
+  <!-- Полноэкранное меню -->
+  <div id="fullMenu" class="full-menu" aria-hidden="true">
+    <button id="menuClose" class="menu-close">✕</button>
+    <nav class="full-menu__nav">
+      <ul>
+        <li><a href="#slider">Слайдер</a></li>
+        <li><a href="#accordion">Аккордеон</a></li>
+        <li><a href="#slideshow">Слайдшоу</a></li>
+        <li><a href="#order">Заказ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Секция будущего слайдера (пока один слайд) -->
+    <section id="slider" class="slider-section">
+      <div class="slider js-slider">
+        <div class="slide">
+          <h2>Слайд 1</h2>
+          <p>Контент одного слайда. Копируйте этот блок чтобы добавить слайды.</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-prev">Prev</button>
+        <button class="slider-next">Next</button>
+      </div>
+    </section>
+
+    <!-- Вертикальный аккордеон -->
+    <section id="accordion" class="accordion-section">
+      <h2>Вертикальный аккордеон</h2>
+      <div class="accordion js-accordion">
+        <div class="accordion__item">
+          <button class="accordion__head">Заголовок 1 <span class="triangle"></span></button>
+          <div class="accordion__wrap">
+            <div class="accordion__content">Текст 1. Скрытый блок, который по умолчанию скрыт (обёртка имеет высоту 0).</div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__head">Заголовок 2 <span class="triangle"></span></button>
+          <div class="accordion__wrap">
+            <div class="accordion__content">Текст 2.</div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__head">Заголовок 3 <span class="triangle"></span></button>
+          <div class="accordion__wrap">
+            <div class="accordion__content">Текст 3.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Слайдшоу: список контента и список аватаров -->
+    <section id="slideshow" class="slideshow-section">
+      <h2>Слайдшоу с аватарками</h2>
+      <div class="slideshow">
+        <ul class="slideshow__content js-slideshow-content">
+          <li class="content-item active">Контент 1</li>
+          <li class="content-item">Контент 2</li>
+          <li class="content-item">Контент 3</li>
+        </ul>
+
+        <ul class="slideshow__avatars js-slideshow-avatars">
+          <li class="avatar" data-index="0"><img src="https://via.placeholder.com/60" alt="avatar1"></li>
+          <li class="avatar" data-index="1"><img src="https://via.placeholder.com/60" alt="avatar2"></li>
+          <li class="avatar" data-index="2"><img src="https://via.placeholder.com/60" alt="avatar3"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Форма заказа -->
+    <section id="order" class="order-section">
+      <h2>Форма заказа</h2>
+      <form id="orderForm" class="order-form">
+        <label>
+          Имя:
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Телефон:
+          <input type="tel" name="phone" id="phone" required />
+        </label>
+        <label>
+          Комментарий:
+          <textarea name="comment" id="comment"></textarea>
+        </label>
+        <label>
+          Кому (email):
+          <input type="email" name="to" id="to" required />
+        </label>
+        <button type="submit">Отправить заказ</button>
+        <div id="orderResult" class="order-result" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
