@@ -1,5 +1,9 @@
 name: Deploy to GitHub Pages
 
+# Даем workflow право записи в репозиторий (GITHUB_TOKEN будет иметь доступ для пушей)
+permissions:
+  contents: write
+
 on:
   push:
     branches:
@@ -11,16 +15,40 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # persist-credentials:true оставляет GITHUB_TOKEN в git config для пуша
+          persist-credentials: true
+          fetch-depth: 0
+
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+
       - name: Install dependencies
         run: npm install
+
       - name: Build
         run: npm run build
+
       - name: Deploy
+        # По умолчанию используем GITHUB_TOKEN (через github_token: ${{ secrets.GITHUB_TOKEN }})
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
+# Если GITHUB_TOKEN всё ещё не может пушить (особенно в организациях с ограничениями),
+# используйте персональный токен (PAT) с правом repo:
+#
+# 1) Сгенерируйте PAT (Settings → Developer settings → Personal access tokens) с scope: repo
+# 2) Сохраните его в репозитории как secret, например GH_PAGES_TOKEN
+# 3) Замените секцию Deploy на:
+#
+#      - name: Deploy
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
+#          publish_dir: ./dist
+#
+# И не забудьте установить в Settings → Actions → General разрешения, позволяющие Actions использовать секреты.
